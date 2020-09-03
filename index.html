@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 35px;
+            text-align: center;
+        }
+        .menu > div > a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .menu > .active > a {
+            color:rgb(210, 232, 255);
+        }
+        
+        .menu > div {
+            background-color: rgb(110, 158, 197);
+            
+        }
+
+        .menu > div:hover {
+            background-color:rgb(125, 184, 231);
+            border: 2px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <div class="active"> <a href="/index.html">Home</a> </div>
+            <div><a href="/profile.html">Profile</a></div>
+            <div><a href="/dashboard.html">Dashboard</a></div>
+            <div><a href="/faq.html">FAQ</a></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
