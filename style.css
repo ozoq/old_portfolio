@@ -1,0 +1,58 @@
+
+body {
+    background-color: #66c2cf;
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    align-self: flex-end;
+    grid-gap: 20px;
+}
+
+.menu > a {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    transition: transform 50ms;
+}
+
+.menu> a:hover {
+    transform: scale(1.3);
+}
+
+img {
+    width: 100%;
+    height: 500px;
+}
+
+p {
+    border: 5px white dotted
+}
+
+.box {
+    width: 400px;
+    padding: 75px;
+}
+
+.line_content {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.b1 {
+    border: solid 5pt white;
+}
+.b2 {
+    border: solid 5px invert;
+}
