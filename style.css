@@ -1,58 +1,84 @@
+* { box-sizing: border-box;}
 
 body {
-    background-color: #66c2cf;
-    color:white;
-    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Mono";
+    font-weight: 900;
+    height: 2000px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu {
-    padding-top: 10px;
+.flex_columns {
     display: flex;
     flex-direction: row;
-    width: 300px;
-    align-self: flex-end;
-    grid-gap: 20px;
+    position: relative;
 }
 
-.menu > a {
-    color: white;
-    font-family: 'Roboto Mono', monospace;
+.side_bar {
+    
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 200px;
+
+    background-color: white;
+    box-shadow: 0px 20px 10px 0px rgb(0,0,0,0.1);
+    
+    
+}
+/* ----nav---- */
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+.nav a{
+    text-align: left;
     text-decoration: none;
-    transition: transform 50ms;
+    color: rgb(0, 0, 0);
+
+    display: block;
+    padding: 14px 12px 14px 25px;    
+}
+.nav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.nav a.active {
+    border-right: solid 5px rgb(68, 185, 221);
 }
 
-.menu> a:hover {
-    transform: scale(1.3);
+/* ----side_bar_bottom---- */
+@media only screen and (max-height: 300px) {
+    .side_bar_bottom {
+        display: none;
+    }
+  }
+.side_bar_bottom {
+    position: absolute;
+    bottom: 10px;
+    width: inherit;
+}
+.side_bar_bottom ul {
+    display:flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+.side_bar_bottom a{
+    color: rgb(99, 99, 99);
+    font-size: 20px;
+    display: block;
+    padding: 15px;
+}
+.side_bar_bottom a:hover {
+    color: rgb(61, 61, 61);
 }
 
-img {
-    width: 100%;
-    height: 500px;
-}
-
-p {
-    border: 5px white dotted
-}
-
-.box {
-    width: 400px;
-    padding: 75px;
-}
-
-.line_content {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-}
-
-.b1 {
-    border: solid 5pt white;
-}
-.b2 {
-    border: solid 5px invert;
+.content {
+    width: 800px;
+    height: 1000px;
+    background-color: #eee;
 }
