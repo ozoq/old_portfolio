@@ -3,6 +3,15 @@
 body {
     padding: 0;
     margin: 0;
+
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .page_container {
@@ -11,7 +20,7 @@ body {
 
 .side_bar {
     
-    overflow: auto;
+    overflow-y: auto;
     position: fixed;
     z-index: 1;
     height: 100%;
@@ -19,7 +28,6 @@ body {
 
     background-color: white;
     box-shadow: 0px 20px 10px 0px rgb(0,0,0,0.1);
-    
     
 }
 
@@ -30,18 +38,14 @@ body {
     font-weight: 900;
 }
 .nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 50px 0 0 0;
+    margin-top: 50px;
 }
 .nav a{
-    text-align: left;
     text-decoration: none;
     color: rgb(0, 0, 0);
-
+    
     display: block;
     padding: 14px 12px 14px 25px;
-
 }
 .nav a:hover {
     background-color: rgb(0, 0, 0);
@@ -52,11 +56,12 @@ body {
 }
 
 /* ----side_bar_bottom---- */
-@media only screen and (max-height: 300px), only screen and (max-width: 1000px) {
+@media only screen and (max-height: 300px) {
     .side_bar_bottom {
         display: none;
     }
-  }
+}
+
 .side_bar_bottom {
     position: absolute;
     bottom: 10px;
@@ -65,9 +70,6 @@ body {
 .side_bar_bottom ul {
     display:flex;
     justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0;
-    margin: 50px 0 0 0;
 }
 .side_bar_bottom a{
     color: rgb(99, 99, 99);
@@ -83,19 +85,28 @@ body {
     margin-left: calc((100% - 200px - 800px) / 2  + 200px);
     width: 800px;
     padding: 30px 30px;
+    border-left: dotted 5px #eee;
+    border-right: dotted 5px #eee;
     
 }
 
-h1 {
-    font-family: "Montserrat";
-    font-weight: 400;
+@media only screen and (max-width: 1000px) {
+    .side_bar {
+        display: none;
+    }
+
+    .content {
+        margin-left: calc((100% - 800px) / 2); 
+        border: none;   
+    }
+}
+
+.content h1 {
+    
     font-size: 50px;
 }
 
-p {
-    font-family: "Montserrat";
-    font-weight: 400;
-    
+.content p {
     line-height: 22px;
     font-size: 23px;
     letter-spacing: 4px;
@@ -115,11 +126,9 @@ p {
 }
 
 .content .img p {
-    text-align: center;
     color: rgb(107, 107, 107);
-    font-family: "Roboto Mono";
-    letter-spacing: 0;
-    font-size: 15px;
+    text-align: center;
+    font: "Roboto Mono" 15px/5px;
     margin: 0;
 }
 .content img {
@@ -136,12 +145,3 @@ p {
     text-align: right;
 }
 
-@media only screen and (max-width: 1000px) {
-    .side_bar {
-        display: none;
-    }
-
-    .content {
-        margin-left: calc((100% - 800px) / 2);    
-    }
-}
