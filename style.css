@@ -6,6 +6,7 @@ body {
 
     font-family: "Montserrat";
     font-weight: 400;
+
 }
 
 ul {
@@ -15,7 +16,7 @@ ul {
 }
 
 .page_container {
-    
+    background-image: url("me1.jpg");
 }
 
 .side_bar {
@@ -71,7 +72,7 @@ ul {
     display:flex;
     justify-content: space-evenly;
 }
-.side_bar_bottom a{
+.side_bar_bottom a {
     color: rgb(99, 99, 99);
     font-size: 20px;
     display: block;
@@ -81,12 +82,16 @@ ul {
     color: rgb(61, 61, 61);
 }
 
+select {
+    font: inherit;
+}
 .content {
     margin-left: calc((100% - 200px - 800px) / 2  + 200px);
     width: 800px;
     padding: 30px 30px;
     border-left: dotted 5px #eee;
     border-right: dotted 5px #eee;
+    
     
 }
 
@@ -102,7 +107,7 @@ ul {
 }
 
 .content h1 {
-    
+    text-align: center;
     font-size: 50px;
 }
 
@@ -122,7 +127,7 @@ ul {
     cursor: pointer;
 }
 .content .img {
-    margin: 40px 50px 40px;
+    margin: 40px 0;
 }
 
 .content .img p {
