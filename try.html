@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * { box-sizing: border-box; }    
+
+            body {
+                padding: 32px;
+                background-color: #ddd;
+
+                font-family: monospace;
+            }
+            .header {
+                width: 100%;
+            }
+            .header, .card {
+                box-shadow: 0 6px 16px -4px rgba(0,0,0,0.3);
+            }
+
+            .header_content {
+                background-color: #eee;
+                text-align: center; 
+                padding: 30px;
+            }
+            .header_content h1 {
+                letter-spacing: 5px;
+                margin: 40px 0;
+
+                font-size: 50px;
+            }
+            a::after {
+                content: "123";
+            }
+
+            .nav {
+                width: 100%;
+                background-color: black;
+                overflow: hidden; /* ????? */
+                position: sticky;
+            }
+            .nav a {
+                display: block;
+                float: left;
+
+                padding: 15px 15px;
+
+                text-decoration: none;
+                text-align: center;
+                color: white;
+            }
+
+            .nav a:hover {
+                color: black;
+                background-color: rgb(187, 241, 255);
+            }
+
+            .nav a.right {
+                float: right;
+            }
+
+            .content_all {
+                
+            }
+
+            .left_column {
+                float: left;
+                width: 75%;
+            }
+
+            .right_column {
+                float: left;
+                width: 25%;
+                padding-left: 25px;
+            }
+
+            .card {
+                background-color: white;
+                padding: 40px;
+                margin-top: 25px;
+                width: 100%;
+                
+
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="header_content">
+                <h1>Header</h1>
+                <p>Dat is header! More text la lala !!</p>
+            </div>
+
+            <div class="nav">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a class="right" href="#">Link 4</a>
+            </div>
+        </div>
+
+        <div class="content_all">
+            <div class="left_column">
+                <div class="card">
+                    <h3>Card that is first is this card.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eius aperiam atque voluptatibus culpa maxime distinctio omnis libero rerum quibusdam? Sint eaque ab atque iure labore a, facere impedit harum.</p>
+                </div>
+                <div class="card">
+                    <h3>Card that is first is this card.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eius aperiam atque voluptatibus culpa maxime distinctio omnis libero rerum quibusdam? Sint eaque ab atque iure labore a, facere impedit harum.</p>
+                </div>
+                <div class="card">
+                    <h3>Card that is first is this card.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eius aperiam atque voluptatibus culpa maxime distinctio omnis libero rerum quibusdam? Sint eaque ab atque iure labore a, facere impedit harum.</p>
+                </div>
+            </div>
+            <div class="right_column">
+                <div class="card">
+                    <h3>Card that is first is this card.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eius aperiam atque voluptatibus culpa maxime distinctio omnis libero rerum quibusdam? Sint eaque ab atque iure labore a, facere impedit harum.</p>
+                </div>
+                <div class="card">
+                    <h3>Card that is first is this card.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eius aperiam atque voluptatibus culpa maxime distinctio omnis libero rerum quibusdam? Sint eaque ab atque iure labore a, facere impedit harum.</p>
+                </div>
+                <div class="card">
+                    <h3>Card that is first is this card.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eius aperiam atque voluptatibus culpa maxime distinctio omnis libero rerum quibusdam? Sint eaque ab atque iure labore a, facere impedit harum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+        </div>
+    </body>
+</html>
